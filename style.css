@@ -1,0 +1,163 @@
+/* GENERAL PAGE STYLING */
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  color: #ffffff; /* White text for contrast */
+  text-align: center;
+  position: relative;
+  overflow-x: hidden;
+  background: #000000; /* Black default background */
+}
+
+/* BACKGROUND "I LOVE YOUUU" */
+body::before {
+  content: "I LOVE YOUUU 💖";
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-20deg);
+  font-size: 150px;
+  font-weight: bold;
+  color: rgba(255,255,255,0.05);
+  z-index: 0;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+/* ALL SECTIONS */
+section {
+  padding: 70px 20px;
+  position: relative;
+  z-index: 1;
+}
+
+/* HERO / WELCOME */
+.hero {
+  background: url('photos/pic4.jpg') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero .overlay {
+  background: rgba(0,0,0,0.6); /* Black overlay for text readability */
+  padding: 50px;
+  border-radius: 20px;
+}
+
+.hero h1, .hero p {
+  color: #ffffff;
+}
+
+/* BIRTHDAY MESSAGE */
+.message {
+  background: #000000;
+  color: #ffffff;
+}
+
+/* LETTERS SECTION */
+.letters {
+  background: #ffffff;
+  color: #000000;
+}
+
+.letter {
+  background: #000000;
+  color: #ffffff;
+  margin: 15px auto;
+  padding: 20px;
+  max-width: 500px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.letter:hover {
+  transform: scale(1.05);
+  background: #333333;
+}
+
+/* PHOTOS / GALLERY */
+.photos {
+  background: #000000;
+  color: #ffffff;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  width: 200px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 15px;
+  border: 2px solid #ffffff;
+}
+
+/* FINAL NOTE */
+.final {
+  background: url('photos/pic12.jpg') center/cover no-repeat;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: #ffffff;
+}
+
+.final .overlay {
+  background: rgba(0,0,0,0.6);
+  padding: 50px;
+  border-radius: 20px;
+}
+
+/* MODAL STYLING */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+  background-color: #000000;
+  color: #ffffff;
+  margin: 10% auto;
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 600px;
+  text-align: left;
+  position: relative;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.modal-content p {
+  white-space: pre-wrap;
+  margin-top: 15px;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  color: #ffffff;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
