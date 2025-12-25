@@ -139,7 +139,7 @@ You are loved.
 You are enough.
 You are chosen.
 You are capable.
-You are deserving — because He made you deserving.
+You are deserving , because He made you deserving.
 
 Walk into every room boldly.
 Live life fully.
@@ -187,3 +187,4 @@ window.addEventListener('click', (event) => {
     modal.style.display = "none";
   }
 });
+
