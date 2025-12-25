@@ -48,7 +48,7 @@ to see you grow and become who God made you to be.
 I love you so much.
 Happy birthday, my love.`,
 
-heyy , me again(niwachie number angalau)
+i love you💗
 
 I love how you look.
 I love your smile.
@@ -187,5 +187,6 @@ window.addEventListener('click', (event) => {
     modal.style.display = "none";
   }
 });
+
 
 
